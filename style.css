@@ -1,0 +1,160 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.form-box {
+    width: 300px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 90%;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    border: 1px solid gray;
+    padding: 15px;
+    margin: 10px;
+    width: 170px;
+    border-radius: 10px;
+}
+
+.product img {
+    width: 20px;
+    height: 200px;
+    object-fit: cover;
+}
+.message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 12px 18px;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.success {
+    background: green;
+}
+
+.error {
+    background: red;
+}
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* 🔥 HOVER EFFECT */
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(21, 12, 12, 0.2);
+    cursor: pointer;
+}
+button {
+    padding: 8px 12px;
+    border: none;
+    background: #b9a2cc;
+    color: rgb(21, 20, 20);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* 🔥 HOVER */
+button:hover {
+    background: #37404e;
+    transform: scale(1.05);
+}
+.product img {
+    width: 150px;
+    transition: 0.3s;
+}
+
+.product:hover img {
+    transform: scale(1.1);
+}
+.categories button:hover {
+    background: black;
+    color: white;
+}
+.order {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.order-item img.order-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.order p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+/* Navbar links with hover underline effect */
+.nav-link {
+    text-decoration: none;       /* remove default underline */
+    color: #000;                 /* normal text color */
+    position: relative;
+    padding-bottom: 2px;         /* space for underline */
+}
+
+/* Create underline only on hover using pseudo-element */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;                 /* thickness of underline */
+    width: 0;                     /* start invisible */
+    background-color: #000;       /* underline color */
+    transition: width 0.3s ease;
+    background-color: rgb(28, 26, 26);
+    transform: (scale(1.0));               /* full underline on hover */
+
+}
+
+.nav-link:hover::after {
+    width: 100%;  
+    background-color: rgb(30, 27, 27);
+    transform: (scale(1.0));               /* full underline on hover */
+
+}
